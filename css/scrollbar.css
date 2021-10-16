@@ -1,0 +1,20 @@
+body {
+    overflow-x: overlay;
+}
+
+::-webkit-scrollbar {
+    height: 15px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f72585;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff6bad;
+}

@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1200px) {
+    .navbar :not(.tablet-show, option) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .navbar :not(.mobile-show, option) {
+        display: none;
+    }
+}

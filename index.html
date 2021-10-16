@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titillium Web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/32d261c1ed.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+    <title>Sort Visualizer</title>
+</head>
+<body class="noselect">
+    <div class="navbar container">
+        <div class="input-wrapper mobile-show tablet-show">
+            <span>Data:</span>
+            <input type="text" class="textbox tablet-show" id="number-data" placeholder="5 7 3 6 1 2 8 4">
+            <input type="button" value="OK" class="btn tablet-show" id="number-render">
+            <span>atau</span>
+            <input type="button" value="Masukkan Data Acak" class="btn mobile-show tablet-show" id="random-render">
+            <span>dengan ukuran</span>
+            <input type="text" class="textbox" id="data-size" placeholder="Acak">
+        </div>
+        <div class="sort-wrapper mobile-show tablet-show">
+            <span>Algoritma:</span>
+            <select name="sort-algorithm" class="dropdown mobile-show tablet-show" id="sort-algorithm">
+                <option value="bubble_sort">Bubble Sort</option>
+                <option value="selection_sort">Selection Sort</option>
+                <option value="insertion_sort">Insertion Sort</option>
+                <option value="quick_sort">Quick Sort</option>
+                <option value="merge_sort">Merge Sort</option>
+            </select>
+            <span>Kecepatan:</span>
+            <input type="number" value=10 class="spinner" id="sort-speed" min=1 max=100 step=1 onkeydown="return false">
+            <input type="button" value="Urutkan!" class="btn mobile-show tablet-show" id="sort">
+            <a href="https://github.com/noverdy/sort-visualizer" target="_blank" class="icon fab fa-github mobile-show tablet-show"></a>
+        </div>
+    </div>
+    <div class="content" id="bar-content">
+        <!-- Buat bar nya -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
